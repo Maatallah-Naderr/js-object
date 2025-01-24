@@ -9,7 +9,7 @@ const markMiler = {
          return bmi ;
     }
 };
-// console.log(markMiler.calBmi());
+console.log(markMiler.calBmi());
 
 
 
@@ -25,15 +25,35 @@ const johnSmith = {
 
 
 }
-// console.log(johnSmith.calBmi());
+ console.log(johnSmith.calBmi());
 
-  console.log(`${markMiler.calBmi()}>${johnSmith.calBmi()} ?
+// with ternaly  operator
 
-  "${markMiler.name} is bmi ${markMiler.calBmi()} heigher than ${johnSmith.name} bmi (${johnSmith.calBmi()})" :
+//   console.log(`${markMiler.calBmi()}>${johnSmith.calBmi()} ?
+
+//   "${markMiler.name} is bmi ${markMiler.calBmi()} heigher than ${johnSmith.name} bmi (${johnSmith.calBmi()})" :
 
 
-  "${johnSmith.name} is bmi ${johnSmith.calBmi()} heigher than ${markMiler.name} bmi (${markMiler.calBmi()}"
+//   "${johnSmith.name} is bmi ${johnSmith.calBmi()} heigher than ${markMiler.name} bmi (${markMiler.calBmi()}"
          
   
-  `);
+//   `);
+
+// with if condition
+
+  if (markMiler.calBmi() > johnSmith.calBmi() ) {
+
+    console.log(`${markMiler.name} is bmi ${markMiler.calBmi()}
+
+     heigher than ${johnSmith.name} bmi (${johnSmith.calBmi()})`);
+
+     } else if (johnSmith.calBmi()> markMiler.calBmi()){
+
+        console.log(`${johnSmith.name} is bmi ${johnSmith.calBmi()} 
+
+        heigher than ${markMiler.name} bmi (${markMiler.calBmi()}`);
+        }
+        else
+        console.log(`${markMiler.name} and ${johnSmith.name} have a some bmi (${johnSmith.calBmi()})`);
+
   
